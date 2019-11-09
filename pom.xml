@@ -82,6 +82,14 @@
         </dependency>
 
 
+
+        <!--https://blog.csdn.net/q470846864/article/details/85693648-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+
     </dependencies>
     <!--https://cloud.tencent.com/developer/article/1412370-->
     <repositories>

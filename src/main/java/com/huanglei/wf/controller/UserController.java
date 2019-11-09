@@ -9,6 +9,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.time.Duration;
+import java.util.stream.IntStream;
 
 @RestController
 @RequestMapping("/user")
@@ -35,4 +36,17 @@ public class UserController {
     public Flux<User> findAll() {
         return this.userService.findAll().delayElements(Duration.ofSeconds(2));
     }
+
+
+    public static void main(String[] args) {
+        int[] a={11,12,13};
+        for (int m:a){
+            System.out.println(m);
+        }
+        int asInt = IntStream.of(a).min().getAsInt();
+        double asDouble = IntStream.of(a).average().getAsDouble();
+        System.out.println(asDouble);
+        System.out.println(asInt);
+    }
 }
+
