@@ -1,6 +1,8 @@
 package com.huanglei.wf.test;
 
 import javax.sound.midi.Soundbank;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.*;
 
 class Dog{
@@ -67,5 +69,16 @@ public class MethodReferenceDemo {
         Function<String,Dog> function2 = Dog::new;
         System.out.println(function2.apply("旺财"));
 
+        List<String> list = new ArrayList<>();
+        list.add("mm");
+        System.out.println(list);
+        test(list);
+        System.out.println(list);
+
+    }
+
+    static  void test(List list){
+        list.add("cc");
+        list=null;
     }
 }
